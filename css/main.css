@@ -177,11 +177,16 @@
   color: var(--sre-primary-color);
   font-family: sans-serif, serif;
   font-weight: 100;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-style: normal;
 }
 #sre-home-section-1 .sre-content-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -216,4 +221,52 @@
 #sre-home-section-1 .sre-content-buttons .sre-btn {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
+}
+#sre-home-section-1 .sre-content-buttons form {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+#sre-home-section-1 .sre-content-buttons form input {
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0.35);
+  color: var(--sre-primary-color);
+}
+#sre-home-section-1 .sre-content-buttons form input::-webkit-input-placeholder {
+  color: var(--sre-primary-color);
+}
+#sre-home-section-1 .sre-content-buttons form input::-moz-placeholder {
+  color: var(--sre-primary-color);
+}
+#sre-home-section-1 .sre-content-buttons form input:-ms-input-placeholder {
+  color: var(--sre-primary-color);
+}
+#sre-home-section-1 .sre-content-buttons form input::-ms-input-placeholder {
+  color: var(--sre-primary-color);
+}
+#sre-home-section-1 .sre-content-buttons form input::placeholder {
+  color: var(--sre-primary-color);
+}
+#sre-home-section-1 .sre-content-buttons form input:focus {
+  outline: unset;
+  border-color: var(--sre-primary-color);
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+#sre-home-section-1 .sre-content-buttons form button {
+  border-radius: 0;
+  background-color: var(--sre-primary-color);
+  color: var(--sre-secondary-color);
+  border-color: var(--sre-primary-color);
+  letter-spacing: 1px;
+  margin-left: 0.25rem;
+  outline: 0;
+  -webkit-transition: ease 0.3s all;
+  transition: ease 0.3s all;
+}
+#sre-home-section-1 .sre-content-buttons form button:hover {
+  background-color: transparent;
+  color: var(--sre-primary-color);
 }
