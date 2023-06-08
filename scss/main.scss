@@ -109,6 +109,7 @@ $breakpoints: (
     outline: 0;
     font-weight: unset;
     font-family: unset;
+    font-size: unset;
     &-primary {
       padding-top: 10px;
       padding-bottom: 10px;
@@ -136,6 +137,35 @@ $breakpoints: (
 
 .btn { @extend .sre-btn; }
 .btn-primary { @extend .sre-btn-primary; }
+
+/* Reset Styles */
+
+// Header
+body #wrapwrap #top {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  nav.navbar {
+    background-color: transparent;
+    box-shadow: unset !important;
+    ul.nav {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+      ul#top {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+  &.o_top_fixed_element nav.navbar #top_menu_container a.navbar-brand { display: none; }
+  &.o_header_affixed nav.navbar { 
+    background-color: var(--sre-secondary-color); 
+    #top_menu_container a.navbar-brand { display: block; }
+  }
+}
 
 // Home sections
 #sre-home-section {
@@ -222,6 +252,8 @@ $breakpoints: (
               border-radius: 0px;
               background-color: rgba(0,0,0,.35);
               color: var(--sre-primary-color);
+              padding-top: 10px;
+              padding-bottom: 10px;
               &::placeholder {
                 color: var(--sre-primary-color);
               }
@@ -240,6 +272,8 @@ $breakpoints: (
               margin-left: 0.25rem;
               outline: 0;
               transition: ease .3s all;
+              padding-top: 10px;
+              padding-bottom: 10px;
               &:hover {
                 background-color: transparent;
                 color: var(--sre-primary-color);
