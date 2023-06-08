@@ -134,7 +134,10 @@ $breakpoints: (
   }
 }
 
+.btn { @extend .sre-btn; }
+.btn-primary { @extend .sre-btn-primary; }
 
+// Home sections
 #sre-home-section {
   height: 100vh;
   overflow-y: hidden;

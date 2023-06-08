@@ -77,7 +77,7 @@
 }
 
 /* Main buttons desings */
-.sre-btn {
+.sre-btn, .btn {
   display: inline-block;
   text-decoration: none;
   color: unset;
@@ -91,7 +91,7 @@
   font-weight: unset;
   font-family: unset;
 }
-.sre-btn-primary {
+.sre-btn-primary, .btn-primary {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 30px;
@@ -108,11 +108,11 @@
   font-weight: 500;
 }
 @media only screen and (max-width: 800px) {
-  .sre-btn-primary {
+  .sre-btn-primary, .btn-primary {
     min-width: 200px;
   }
 }
-.sre-btn-primary:hover {
+.sre-btn-primary:hover, .btn-primary:hover {
   background-color: var(--sre-primary-color);
   color: var(--sre-secondary-color);
 }
@@ -213,12 +213,12 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #sre-home-section-1 .sre-content-buttons .sre-btn {
+  #sre-home-section-1 .sre-content-buttons .sre-btn, #sre-home-section-1 .sre-content-buttons .btn {
     margin-bottom: 0.5rem;
     width: 100%;
   }
 }
-#sre-home-section-1 .sre-content-buttons .sre-btn {
+#sre-home-section-1 .sre-content-buttons .sre-btn, #sre-home-section-1 .sre-content-buttons .btn {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
 }
