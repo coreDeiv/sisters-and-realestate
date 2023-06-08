@@ -76,7 +76,45 @@
   }
 }
 
-/* Main buttons desings */
+/* Reset Styles */
+body #wrapwrap #top {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+body #wrapwrap #top nav.navbar {
+  background-color: transparent;
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
+}
+body #wrapwrap #top nav.navbar ul.nav {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+body #wrapwrap #top nav.navbar ul.nav ul#top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+}
+body #wrapwrap #top.o_top_fixed_element nav.navbar #top_menu_container a.navbar-brand {
+  display: none;
+}
+body #wrapwrap #top.o_header_affixed nav.navbar {
+  background-color: var(--sre-secondary-color);
+}
+body #wrapwrap #top.o_header_affixed nav.navbar #top_menu_container a.navbar-brand {
+  display: block;
+}
+
+.s_embed_code {
+  min-height: auto !important;
+}
+
+/* Main buttons designs */
 .sre-btn, .btn {
   display: inline-block;
   text-decoration: none;
@@ -116,40 +154,6 @@
 .sre-btn-primary:hover, .btn-primary:hover {
   background-color: var(--sre-primary-color);
   color: var(--sre-secondary-color);
-}
-
-/* Reset Styles */
-body #wrapwrap #top {
-  position: fixed;
-  left: 0;
-  right: 0;
-  width: 100%;
-}
-body #wrapwrap #top nav.navbar {
-  background-color: transparent;
-  -webkit-box-shadow: unset !important;
-          box-shadow: unset !important;
-}
-body #wrapwrap #top nav.navbar ul.nav {
-  display: none;
-  visibility: hidden;
-  opacity: 0;
-}
-body #wrapwrap #top nav.navbar ul.nav ul#top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  visibility: visible;
-  opacity: 1;
-}
-body #wrapwrap #top.o_top_fixed_element nav.navbar #top_menu_container a.navbar-brand {
-  display: none;
-}
-body #wrapwrap #top.o_header_affixed nav.navbar {
-  background-color: var(--sre-secondary-color);
-}
-body #wrapwrap #top.o_header_affixed nav.navbar #top_menu_container a.navbar-brand {
-  display: block;
 }
 
 #sre-home-section {
@@ -310,3 +314,15 @@ body #wrapwrap #top.o_header_affixed nav.navbar #top_menu_container a.navbar-bra
   background-color: transparent;
   color: var(--sre-primary-color);
 }
+#sre-home-section-2 {
+  background-color: var(--sre-primary-color);
+}
+#sre-home-section-2 .sre-row {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+#sre-home-section-2 .sre-content {
+  text-align: center;
+}
+
+/**/ /**/

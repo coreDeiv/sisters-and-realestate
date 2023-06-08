@@ -1,0 +1,40 @@
+/* Grid  Sisterly Real State */
+.sre {
+  &-container {
+    width: auto;
+    max-width: 1140px !important;
+    margin: auto;
+    @include mq("desktop-s") { max-width: 90%; }
+    * { font-family: sans-serif, serif; }
+  }
+  &-row {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    &.e-flex-end {
+      justify-content: flex-end;
+      text-align: right;
+      .e-content {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+      }
+    }
+    &.e-flex-start {
+      justify-content: flex-start;
+      text-align: left;
+      .e-content {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+    &-stretch {
+      width: auto;
+      max-width: 70% !important;
+      margin: auto;
+      @include mq("desktop-s") { max-width: 90%; }
+      @include mq("phone-m") { max-width: 90% !important; }
+    }
+  }
+}

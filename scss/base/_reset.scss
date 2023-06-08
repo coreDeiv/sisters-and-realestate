@@ -1,0 +1,32 @@
+/* Reset Styles */
+
+// Header
+body #wrapwrap #top {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  nav.navbar {
+    background-color: transparent;
+    box-shadow: unset !important;
+    ul.nav {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+      ul#top {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+  &.o_top_fixed_element nav.navbar #top_menu_container a.navbar-brand { display: none; }
+  &.o_header_affixed nav.navbar { 
+    background-color: var(--sre-secondary-color); 
+    #top_menu_container a.navbar-brand { display: block; }
+  }
+}
+
+.s_embed_code {
+  min-height: auto !important;
+}

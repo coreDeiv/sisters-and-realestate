@@ -1,0 +1,43 @@
+/* Main buttons designs */
+.sre {
+  &-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: unset;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    line-height: auto;
+    border: none;
+    border-radius: 0;
+    outline: 0;
+    font-weight: unset;
+    font-family: unset;
+    font-size: unset;
+    &-primary {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+      border-color: var(--sre-primary-color);
+      border-width: 1px;
+      border-style: solid;
+      color: var(--sre-primary-color);
+      text-transform: uppercase;
+      transition: ease .3s all;
+      min-width: 100px;
+      letter-spacing: 1px;
+      font-weight: 500;
+      @include mq("phone-xl") {
+        min-width: 200px;
+      }
+      &:hover {
+        background-color: var(--sre-primary-color);
+        color: var(--sre-secondary-color);
+      }
+    }
+  }
+}
+
+.btn { @extend .sre-btn; }
+.btn-primary { @extend .sre-btn-primary; }

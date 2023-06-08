@@ -1,0 +1,131 @@
+// Home sections
+#sre-home-section {
+  height: 100vh;
+  overflow-y: hidden;
+  &-1 {
+    .sre {
+      &-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: auto;
+        width: 100vw;
+        min-height: 100vh;
+        z-index: -1;
+        object-fit: cover;
+      }
+      &-container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
+        margin-bottom: 0 !important;
+      }
+      &-row {
+        align-items: center;
+      }
+      &-content {
+        text-align: center;
+        height: 100% !important;
+        img {
+          width: auto;
+          max-width: 50%;
+          margin-bottom: -1rem;
+          @include mq("phone-xl") { max-width: 100%; }
+          @include mq("phone-m") { max-width: 80%; }
+        }
+        h1 {
+          color: var(--sre-primary-color);
+          font-family: sans-serif, serif;
+          font-weight: 100;
+          font-size: 2.5rem;
+          line-height: 2.5rem;
+          font-style: normal;
+        }
+        &-buttons {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          max-width: 50%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          @include mq("phone-xl") {
+            max-width: 100%;
+            margin-left: unset;
+            margin-right: unset;
+          }
+          @include mq("phone-l") {
+            flex-direction: column;
+            .sre-btn {
+              margin-bottom: 0.5rem;
+              width: 100%;
+            }
+          }
+          .sre-btn {
+            margin-left: 0.25rem;
+            margin-right: 0.25rem;
+          }
+
+          form {
+            width: 100%;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            margin-left: 0.25rem;
+            margin-right: 0.25rem;
+            input {
+              border-radius: 0px;
+              background-color: rgba(0,0,0,.35);
+              color: var(--sre-primary-color);
+              padding-top: 10px;
+              padding-bottom: 10px;
+              height: auto;
+              &::placeholder {
+                color: var(--sre-primary-color);
+              }
+              &:focus {
+                outline: unset;
+                border-color: var(--sre-primary-color);
+                box-shadow: unset;
+              }
+            }
+            button {
+              border-radius: 0;
+              background-color: var(--sre-primary-color);
+              color: var(--sre-secondary-color);
+              border-color: var(--sre-primary-color);
+              letter-spacing: 1px;
+              margin-left: 0.25rem;
+              outline: 0;
+              transition: ease .3s all;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              &:hover {
+                background-color: transparent;
+                color: var(--sre-primary-color);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &-2 {
+    background-color: var(--sre-primary-color);
+    .sre {
+      &-row {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+      &-content {
+        text-align: center;
+      }
+    }
+  }
+}
