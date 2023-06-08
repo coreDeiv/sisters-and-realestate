@@ -254,6 +254,7 @@ body #wrapwrap #top {
               color: var(--sre-primary-color);
               padding-top: 10px;
               padding-bottom: 10px;
+              height: auto;
               &::placeholder {
                 color: var(--sre-primary-color);
               }
