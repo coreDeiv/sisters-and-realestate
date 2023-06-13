@@ -9,15 +9,11 @@ body #wrapwrap #top {
   nav.navbar {
     background-color: transparent;
     box-shadow: unset !important;
-    ul.nav {
+    #top_menu_container ul.nav:not(ul#top_menu) {
       display: none;
       visibility: hidden;
       opacity: 0;
-      ul#top {
-        display: flex;
-        visibility: visible;
-        opacity: 1;
-      }
+      pointer-events: none;
     }
   }
   &.o_top_fixed_element nav.navbar #top_menu_container a.navbar-brand { display: none; }

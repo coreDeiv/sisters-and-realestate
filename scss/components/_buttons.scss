@@ -36,6 +36,37 @@
         color: var(--sre-secondary-color);
       }
     }
+    &-secondary {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: var(--sre-secondary-color);
+      background-color: var(--sre-secondary-color);
+      color: var(--sre-primary-color);
+      text-transform: uppercase;
+      transition: ease .3s all;
+      min-width: 100px;
+      letter-spacing: 1px;
+      font-weight: 500;
+      @include mq("phone-xl") {
+        min-width: 200px;
+      }
+      &:hover {
+        background-color: transparent;
+        color: var(--sre-secondary-color);
+      }
+    }
+    &-small {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: .75rem;
+      text-align: center
+    }
   }
 }
 
