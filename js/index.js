@@ -1,13 +1,15 @@
+/* Add class to body by URL */
 window.addEventListener('DOMContentLoaded', function() {
   var body = document.querySelector('body');
   var urlMappings = {
     'home': 'sre-body-home',
     'shop': 'sre-body-shop',
-    'services': 'sre-body-services'
+    'services': 'sre-body-services',
+    'login': 'sre-body-login'
   };
   
   var currentUrl = window.location.href.toLowerCase();
-  var bodyClass = 'sre-home';
+  var bodyClass = 'sre-body-home';
   
   Object.keys(urlMappings).forEach(function(key) {
     if (currentUrl.indexOf(key) !== -1) {
@@ -19,6 +21,7 @@ window.addEventListener('DOMContentLoaded', function() {
   body.id = 'sre';
 });
 
+/* Tabs for Home */
 function openTab(event, tabId) {
   var i, tabcontent, tablinks;
 
@@ -39,6 +42,7 @@ function openTab(event, tabId) {
   event.currentTarget.className += " active";
 }
 
+/* Dynamic editable links */
 var editLinks = document.querySelectorAll('[data-action="edit"]');
 for (var i = 0; i < editLinks.length; i++) {
   editLinks[i].addEventListener('click', function() {
@@ -52,6 +56,7 @@ for (var i = 0; i < editLinks.length; i++) {
   });
 }
 
+/* Cards for porducts in home */
 // Obtén todos los elementos que representan las cards
 const cardElements = document.getElementsByClassName('o_carousel_product_card');
 
