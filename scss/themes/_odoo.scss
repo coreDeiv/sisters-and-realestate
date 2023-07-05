@@ -42,3 +42,40 @@
     }
   }
 }
+
+/*Login button update styles*/
+.sre-body {
+  &-login {
+    .clearfix.oe_login_buttons button {
+      border: 1px solid var(--sre-secondary-color);
+      color: var(--sre-secondary-color);
+      transition: ease .3s all;
+      &:hover {
+        background-color: var(--sre-secondary-color);
+        color: var(--sre-primary-color);
+        border: 1px solid transparent;
+      }
+    }
+  }
+}
+
+/* Position of Whatsapp Button */
+.whatsappapi__button {
+  bottom: 15px !important;
+  right: 30px !important;
+}
+
+/* 404 page */
+.sre-404 {
+  margin-top: 82px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -82px;
+    left: 0;
+    right: 0;
+    height: 82px;
+    background-color: var(--sre-secondary-color);
+  }
+}

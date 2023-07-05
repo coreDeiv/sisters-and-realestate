@@ -4,7 +4,7 @@ body#sre {
 }
 
 // Header
-body.sre-home #wrapwrap #top {
+body.sre-body-home #wrapwrap #top {
   position: fixed;
   left: 0;
   right: 0;
@@ -28,4 +28,12 @@ body.sre-home #wrapwrap #top {
 
 .s_embed_code {
   min-height: auto !important;
+  width: auto;
+  max-width: 100%;
+  overflow: hidden;
+  height: auto;
+}
+
+#sre {
+  overflow-x: hidden;
 }

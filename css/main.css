@@ -1,7 +1,5 @@
 /* All Variables */
 /* Main Colors*/
-@import url("https://fonts.cdnfonts.com/css/amble");
-@import url("https://fonts.cdnfonts.com/css/berlin");
 :root {
   --sre-primary-color: #FFFFFF;
   --sre-secondary-color: #000000;
@@ -65,34 +63,42 @@ body#sre {
   overflow-x: hidden;
 }
 
-body.sre-home #wrapwrap #top {
+body.sre-body-home #wrapwrap #top {
   position: fixed;
   left: 0;
   right: 0;
   width: 100%;
 }
-body.sre-home #wrapwrap #top nav.navbar {
+body.sre-body-home #wrapwrap #top nav.navbar {
   background-color: transparent;
   box-shadow: unset !important;
 }
-body.sre-home #wrapwrap #top nav.navbar #top_menu_container ul.nav:not(ul#top_menu) {
+body.sre-body-home #wrapwrap #top nav.navbar #top_menu_container ul.nav:not(ul#top_menu) {
   display: none;
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
-body.sre-home #wrapwrap #top.o_top_fixed_element nav.navbar #top_menu_container a.navbar-brand {
+body.sre-body-home #wrapwrap #top.o_top_fixed_element nav.navbar #top_menu_container a.navbar-brand {
   display: none;
 }
-body.sre-home #wrapwrap #top.o_header_affixed nav.navbar {
+body.sre-body-home #wrapwrap #top.o_header_affixed nav.navbar {
   background-color: var(--sre-secondary-color);
 }
-body.sre-home #wrapwrap #top.o_header_affixed nav.navbar #top_menu_container a.navbar-brand {
+body.sre-body-home #wrapwrap #top.o_header_affixed nav.navbar #top_menu_container a.navbar-brand {
   display: block;
 }
 
 .s_embed_code {
   min-height: auto !important;
+  width: auto;
+  max-width: 100%;
+  overflow: hidden;
+  height: auto;
+}
+
+#sre {
+  overflow-x: hidden;
 }
 
 [class^=sre-] * {
@@ -369,6 +375,12 @@ body.sre-home #wrapwrap #top.o_header_affixed nav.navbar #top_menu_container a.n
   bottom: 1rem;
   z-index: 2;
 }
+#sre-home-section-3 .sre-content-box .sre-btn-group__text {
+  color: var(--sre-primary-color);
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 100;
+}
 #sre-home-section-3 .sre-content-box .sre-btn-group.sre-btn-start {
   text-align: left;
   margin-left: 0;
@@ -407,6 +419,39 @@ body.sre-home #wrapwrap #top.o_header_affixed nav.navbar #top_menu_container a.n
   min-height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+/*Login button update styles*/
+.sre-body-login .clearfix.oe_login_buttons button {
+  border: 1px solid var(--sre-secondary-color);
+  color: var(--sre-secondary-color);
+  transition: ease 0.3s all;
+}
+.sre-body-login .clearfix.oe_login_buttons button:hover {
+  background-color: var(--sre-secondary-color);
+  color: var(--sre-primary-color);
+  border: 1px solid transparent;
+}
+
+/* Position of Whatsapp Button */
+.whatsappapi__button {
+  bottom: 15px !important;
+  right: 30px !important;
+}
+
+/* 404 page */
+.sre-404 {
+  margin-top: 82px;
+  position: relative;
+}
+.sre-404::before {
+  content: "";
+  position: absolute;
+  top: -82px;
+  left: 0;
+  right: 0;
+  height: 82px;
+  background-color: var(--sre-secondary-color);
 }
 
 /**//*# sourceMappingURL=main.css.map */
