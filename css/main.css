@@ -1,7 +1,12 @@
+/* All Variables */
 /* Main Colors*/
+@import url("https://fonts.cdnfonts.com/css/amble");
+@import url("https://fonts.cdnfonts.com/css/berlin");
 :root {
   --sre-primary-color: #FFFFFF;
   --sre-secondary-color: #000000;
+  --sre-ff-amble: "Amble", sans-serif, serif;
+  --sre-ff-berlin: "Berlin", sans-serif, serif;
 }
 
 /* SIzes for media queries */
@@ -15,9 +20,6 @@
   .sre-container {
     max-width: 90%;
   }
-}
-.sre-container * {
-  font-family: sans-serif, serif;
 }
 .sre-row {
   width: 100%;
@@ -59,6 +61,10 @@
 }
 
 /* Reset Styles */
+body#sre {
+  overflow-x: hidden;
+}
+
 body.sre-home #wrapwrap #top {
   position: fixed;
   left: 0;
@@ -87,6 +93,10 @@ body.sre-home #wrapwrap #top.o_header_affixed nav.navbar #top_menu_container a.n
 
 .s_embed_code {
   min-height: auto !important;
+}
+
+[class^=sre-] * {
+  font-family: var(--sre-ff-amble);
 }
 
 /* Main buttons designs */

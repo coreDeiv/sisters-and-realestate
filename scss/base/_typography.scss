@@ -1,0 +1,6 @@
+@import url('https://fonts.cdnfonts.com/css/amble');
+@import url('https://fonts.cdnfonts.com/css/berlin');
+
+[class^="sre-"] {
+  * { font-family: var(--sre-ff-amble) }
+}

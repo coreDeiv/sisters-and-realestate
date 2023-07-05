@@ -1,7 +1,19 @@
+/* All Variables */
+$amble:               "Amble", sans-serif, serif;
+$amble-lt:            "Amble Lt", sans-serif, serif;
+$amble-ltCn:          "Amble LtCn", sans-serif, serif;
+
+$berlin:              "Berlin", sans-serif, serif;
+$berlin-bold:         "Berlin Bold", sans-serif, serif;
+$berlin-italic-bold:  "Berlin XBold", sans-serif, serif;
+
 /* Main Colors*/
 :root {
   --sre-primary-color:    #FFFFFF;
   --sre-secondary-color:  #000000;
+
+  --sre-ff-amble:           "Amble", sans-serif, serif;
+  --sre-ff-berlin:          "Berlin", sans-serif, serif;
 }
 
 /* SIzes for media queries */

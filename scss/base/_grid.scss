@@ -5,7 +5,6 @@
     max-width: 1140px !important;
     margin: auto;
     @include mq("desktop-s") { max-width: 90%; }
-    * { font-family: sans-serif, serif; }
   }
   &-row {
     width: 100%;
