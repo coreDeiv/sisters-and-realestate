@@ -19,8 +19,6 @@ window.addEventListener('DOMContentLoaded', function() {
   body.id = 'sre';
 });
 
-
-
 function openTab(event, tabId) {
   var i, tabcontent, tablinks;
 
@@ -53,3 +51,37 @@ for (var i = 0; i < editLinks.length; i++) {
     }, 3000);
   });
 }
+
+// Obtén todos los elementos que representan las cards
+const cardElements = document.getElementsByClassName('o_carousel_product_card');
+
+// Recorre cada card y realiza la solicitud para obtener la información correspondiente
+Array.from(cardElements).forEach(card => {
+  // Obtén la URL relativa de la card
+  const relativeUrl = card.querySelector('a.o_carousel_product_img_link').getAttribute('href');
+
+  // Agrega el dominio del sitio web a la URL relativa
+  const url = new URL(relativeUrl, 'https://sisterlyrealestate.com').href;
+  console.log(url);
+
+  // Realiza la solicitud a la URL de la card
+  fetch(url)
+    .then(response => response.text())
+    .then(data => {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(data, 'text/html');
+
+      // Ejemplo de búsqueda de elementos con diferentes valores de data-oe-id
+      const selector = 'span[data-oe-model="product.template.attribute.value"]';
+      const elementos = doc.querySelectorAll(selector);
+
+      // Recorre todos los elementos encontrados y muestra su contenido
+      elementos.forEach(elemento => {
+        const contenido = elemento.textContent;
+        console.log(contenido);
+      });
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+});
