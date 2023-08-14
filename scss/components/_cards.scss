@@ -1,0 +1,29 @@
+#sre-home-section-cards-web-scrapping {
+  margin-bottom: -1.4rem;
+  .sre {
+    &-container-fluid { width: 100%; }
+    &-row {
+      display: block;
+      width: 100%;
+    }
+    &-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 5px;
+      &__item {
+        &:first-child { border-right: 2px solid rgba(0,0,0,.25); }
+        &:last-child { border-left: 2px solid rgba(0,0,0,.25); }
+        img {
+          width: 20px;
+          margin-left: 20px;
+        }
+        span {
+          color: rgba(0,0,0,.5);
+          padding: 5px 10px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
